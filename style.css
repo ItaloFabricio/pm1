@@ -88,6 +88,8 @@ nav{
     padding: 0 100px;
     position: sticky;
     top:0;
+
+    z-index: 99;
 }
 
 nav img{
@@ -129,6 +131,7 @@ nav ul a{
 .about-me .img-container img{
     width:70%;
     height: 100%;   
+    object-fit: cover;
 }
 
 .about-me .img-container .line{
@@ -156,6 +159,16 @@ nav ul a{
     }
     nav{
         padding: 0 30px;
+    }
+    .about-me{
+        flex-direction: column;
+    }
+    .about-me .container, .about-me .img-container{
+        width: 100%;
+    }
+    .about-me .container{
+        padding-right: 0;
+        margin: 70px 0;
     }
 }
 
@@ -197,6 +210,9 @@ nav ul a{
     nav ul a svg{
         display: block;
         margin: 0 auto 10px;
+    }
+    .about-me{
+        padding: 40px;
     }
     
 }
